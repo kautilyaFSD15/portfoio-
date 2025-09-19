@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact {
+      min-height: 100vh;
+      background: url("contact-bg.jpg") no-repeat center center/cover;
+      padding: 80px 10%;
+      color: #fff;
+    }
+
+    .section-title h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    .section-title p {
+      font-size: 1.3rem;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .contact-info {
+      background: rgba(0,0,0,0.7);
+      padding: 35px;
+      border-radius: 15px;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .contact-info p {
+      margin: 12px 0;
+      font-size: 1.3rem;
+      line-height: 1.6;
+    }
+
+    .contact-info i {
+      color: #00ffcc;
+      margin-right: 12px;
+      font-size: 1.5rem;
+    }
+
+    .contact-form {
+      background: rgba(0,0,0,0.7);
+      padding: 35px;
+      border-radius: 15px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 12px 0;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      background: #00ffcc;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #00ccaa;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Kautilya</a>
+    <nav>
+      <a href="portf.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="hobbie.html">Hobbies</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="section-title">
+      <h1>Contact <span>Me</span></h1>
+      <p>Let's connect! You can reach out to me via the following details or send me a message directly.</p>
+    </div>
+
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><i class="fa-solid fa-envelope"></i> kautilyashukla05@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9569787754</p>
+        <p><i class="fa-solid fa-location-dot"></i> Kanpur, India</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send Me a Message</h2>
+        <form action="#" method="post">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hobbies Page Background */
+        .hobbies {
+            min-height: 100vh;
+            background: url("hobbies-bg.jpg") no-repeat center center/cover;
+            padding: 80px 10%;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Section Title */
+        .section-title h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .section-title p {
+            font-size: 1.4rem;
+        }
+
+        /* Container */
+        .hobbies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        /* Hobby Cards */
+        .hobby-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .hobby-box i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #00ffcc;
+        }
+
+        .hobby-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .hobby-box p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        .hobby-box:hover {
+            transform: translateY(-8px);
+            background: rgba(0, 255, 204, 0.15);
+            border: 1px solid #00ffcc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Kautilya</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="hobbies.html" class="active">Hobbies</a>
+            <a href="contect.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hobbies Section -->
+    <section class="hobbies">
+        <div class="section-title">
+            <h1>My <span>Hobbies</span></h1>
+            <p>Things I love to do in my free time that keep me motivated and balanced.</p>
+        </div>
+
+        <div class="hobbies-container">
+            <div class="hobby-box">
+                <i class="fa-solid fa-motorcycle"></i>
+                <h3>Riding Bikes</h3>
+                <p>I enjoy riding bikes as it gives me freedom, thrill, and a way to explore new places.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-car"></i>
+                <h3>Driving</h3>
+                <p>Driving relaxes me and helps me stay focused while enjoying long journeys.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Reading Factful Books</h3>
+                <p>I love reading books that add knowledge and provide real-life lessons.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-landmark"></i>
+                <h3>Reading History of Our Heroes</h3>
+                <p>Learning about the struggles and achievements of our heroes inspires me to stay strong and dedicated.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Cooking</h3>
+                <p>Cooking allows me to be creative, try new dishes, and share happiness with family and friends.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-microphone"></i>
+                <h3>Singing</h3>
+                <p>Singing is my way to express emotions and bring positivity in my life.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-baseball"></i>
+                <h3>Cricket</h3>
+                <p>Cricket is my favorite sport that teaches me teamwork, patience, and strategy.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-person-running"></i>
+                <h3>Kabaddi</h3>
+                <p>Kabaddi keeps me active, builds strength, and improves my quick decision-making ability.</p>
+            </div>
+
+            <div class="hobby-box">
+                <i class="fa-solid fa-landmark-flag"></i>
+                <h3>Interest in Politics</h3>
+                <p>I follow politics with curiosity as it shapes the future of our nation and society.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /* Skills Page Background */
+  .skills {
+    min-height: 100vh;
+    background: url("skills-bg.jpg") no-repeat center center/cover;
+    padding: 80px 10%;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* Section Title */
+  .section-title h1 {
+    font-size: 3rem;   /* increased */
+    margin-bottom: 15px;
+  }
+
+  .section-title span {
+    color: #00ffcc;
+  }
+
+  .section-title p {
+    font-size: 1.2rem;   /* increased */
+    margin-bottom: 50px;
+    opacity: 0.85;
+  }
+
+  /* Skills Container */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+
+  /* Skill Cards */
+  .skill-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 35px;
+    border-radius: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .skill-box i {
+    font-size: 3.5rem;   /* increased */
+    margin-bottom: 20px;
+    color: #00ffcc;
+  }
+
+  .skill-box h3 {
+    margin-bottom: 12px;
+    font-size: 1.6rem;   /* increased */
+  }
+
+  .skill-box p {
+    font-size: 1.05rem;   /* increased */
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  /* Hover Effect */
+  .skill-box:hover {
+    transform: translateY(-12px);
+    background: rgba(0, 255, 204, 0.15);
+    border: 1px solid #00ffcc;
+  }
+</style>
+<body>
+  <header>
+    <a href="index.html" class="logo">Kautilya</a>
+    <nav>
+      <a href="portf.html">Home</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="hobbie.html">Hobby</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="section-title">
+      <h1>My <span>Skills</span></h1>
+      <p>Here are the technical and professional skills I have learned and keep improving.</p>
+    </div>
+
+    <div class="skills-container">
+      <div class="skill-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Proficient in HTML, CSS, JavaScript, and responsive websites.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fa-solid fa-database"></i>
+        <h3>Database Management</h3>
+        <p>Hands-on experience with MySQL and database design.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fa-brands fa-python"></i>
+        <h3>Python</h3>
+        <p>Good understanding of Python for data handling and automation.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fa-solid fa-file-powerpoint"></i>
+        <h3>Microsoft PowerPoint</h3>
+        <p>Skilled in creating professional and engaging presentations.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fa-solid fa-file-word"></i>
+        <h3>Microsoft Word</h3>
+        <p>Experienced in documentation, formatting, and report writing.</p>
+      </div>
+
+      <div class="skill-box">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+        <p>Version control and collaboration using Git and GitHub repositories.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

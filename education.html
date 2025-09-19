@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Education Page Background */
+        .education {
+            min-height: 100vh;
+            background: url("education-bg.jpg") no-repeat center center/cover;
+            padding: 80px 10%;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Section Title */
+        .section-title h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .section-title p {
+            font-size: 1.4rem;
+        }
+
+        /* Education Container */
+        .education-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        /* Education Cards */
+        .edu-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 35px;
+            border-radius: 15px;
+            text-align: left;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .edu-box i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #00ffcc;
+        }
+
+        .edu-box h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .edu-box span {
+            font-size: 1.2rem;
+            font-style: italic;
+            display: block;
+            margin-bottom: 12px;
+            opacity: 0.85;
+        }
+
+        .edu-box p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+
+        /* Hover Effect */
+        .edu-box:hover {
+            transform: translateY(-8px);
+            background: rgba(0, 255, 204, 0.15);
+            border: 1px solid #00ffcc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Kautilya</a>
+
+        <nav>
+            <a href="portf.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="hobbie.html">Hobby</a>
+            <a href="contect.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="section-title">
+            <h1>My <span>Education</span></h1>
+            <p>Here is my academic journey and qualifications.</p>
+        </div>
+
+        <div class="education-container">
+            <div class="edu-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>B.Tech in Information Technology</h3>
+                <span>2023 - 2027 | PSIT, Kanpur</span>
+                <p>Currently pursuing Bachelor of Technology in IT with strong foundation in programming, data structures, and web development.</p>
+            </div>
+
+            <div class="edu-box">
+                <i class="fa-solid fa-school"></i>
+                <h3>Intermediate (Class 12th)</h3>
+                <span>2022 - 2023 | UP Board</span>
+                <p>Completed Higher Secondary with PCM stream. Built strong base in Mathematics, Physics and Computer Science.</p>
+                <p><strong>Marks:</strong> 81.6%</p>
+            </div>
+
+            <div class="edu-box">
+                <i class="fa-solid fa-book"></i>
+                <h3>High School (Class 10th)</h3>
+                <span>2020 - 2021 | UP Board</span>
+                <p>Completed Secondary education with distinction, focusing on Science and Mathematics.</p>
+                <p><strong>Marks:</strong> 90.1%</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
